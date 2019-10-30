@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="SearchResultCell" customModule="NewsFeed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="749" text="Das Scheitern der Facebook-Währung Libra" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6X-vi-338">
+                        <rect key="frame" x="76" y="5" width="236" height="31"/>
+                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvp-fa-5Jx" customClass="ExpandableLabel" customModule="NewsFeed" customModuleProvider="target">
+                        <rect key="frame" x="76" y="56.5" width="236" height="61"/>
+                        <string key="text">An diesem Mittwoch muss Mark Zuckerberg wieder einmal seriös erscheinen. Anzug anziehen, Krawatte binden und in Washington gute Miene zu den Fragen der amerikanischen Kongressabgeordneten machen. Darin hat der Facebook-Chef eine gewisse Routine, hat er sich</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="u2Y-tD-NaD">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Z32-Ch-bZy"/>
+                            <constraint firstAttribute="width" constant="60" id="q4G-CQ-IZF"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="u2Y-tD-NaD" secondAttribute="bottom" priority="999" constant="10" id="7mW-dW-zvi"/>
+                    <constraint firstItem="B6X-vi-338" firstAttribute="leading" secondItem="u2Y-tD-NaD" secondAttribute="trailing" constant="8" id="ATo-M2-xse"/>
+                    <constraint firstItem="u2Y-tD-NaD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="COn-3o-6YC"/>
+                    <constraint firstAttribute="bottom" secondItem="wvp-fa-5Jx" secondAttribute="bottom" constant="5" id="SKI-ec-m6P"/>
+                    <constraint firstItem="wvp-fa-5Jx" firstAttribute="leading" secondItem="u2Y-tD-NaD" secondAttribute="trailing" constant="8" id="Y0U-R0-bmr"/>
+                    <constraint firstAttribute="trailing" secondItem="B6X-vi-338" secondAttribute="trailing" constant="8" id="doW-9m-Ap8"/>
+                    <constraint firstAttribute="trailing" secondItem="wvp-fa-5Jx" secondAttribute="trailing" constant="8" id="eXC-m1-5LX"/>
+                    <constraint firstItem="B6X-vi-338" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="slC-CE-1Hw"/>
+                    <constraint firstItem="wvp-fa-5Jx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="B6X-vi-338" secondAttribute="bottom" constant="3" id="uhT-GJ-khA"/>
+                    <constraint firstItem="u2Y-tD-NaD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="xXq-yL-ehL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="previewImageView" destination="u2Y-tD-NaD" id="7ds-lE-3aE"/>
+                <outlet property="shortDescriptionLabel" destination="wvp-fa-5Jx" id="IYz-tF-FEF"/>
+                <outlet property="titleLabel" destination="B6X-vi-338" id="eMX-fV-Y9w"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="57.121439280359823"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Placeholder" width="60" height="60"/>
+    </resources>
+</document>
