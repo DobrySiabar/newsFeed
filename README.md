@@ -1,8 +1,8 @@
 # newsFeed
 
-No additional settings are required to run the application! Just download the project and open NewsFeed.xcodeproj file, build and run.
+# No additional settings are required to run the application! Just download the project and open NewsFeed.xcodeproj file, build and run.
 
-Description:
+# Description:
 
 Using any free News API (https://newsapi.org), an app can display and filter news for last 7 days.
 
