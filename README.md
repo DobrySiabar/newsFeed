@@ -4,7 +4,7 @@
 
 # Description:
 
-Using any free News API (https://newsapi.org), an app can display and filter news for last 7 days.
+Using a free News API (https://newsapi.org), an app can display and filter news for last 7 days.
 
 Each cell contain preview image (if no image received, use fixed placeholder instead), title and short description (1-3 lines of text). If description is more than 3 lines, use blue "Show More" button to see full description.
 
